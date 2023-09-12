@@ -86,11 +86,11 @@
 
 		<!-- START Modules -->
 
-<!--		<dependency>-->
-<!--			<groupId>dev.vivekraman</groupId>-->
-<!--			<artifactId>template</artifactId>-->
-<!--			<version>${module.template.version}</version>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>dev.vivekraman</groupId>
+			<artifactId>template</artifactId>
+			<version>${module.template.version}</version>
+		</dependency>
 
 		<!-- END Modules -->
 	</dependencies>

@@ -12,7 +12,7 @@ import reactor.core.scheduler.Scheduler;
 public class HeartbeatController {
   private final Scheduler scheduler;
 
-  @GetMapping
+  @GetMapping("/asd")
   Mono<Response<Boolean>> alive() {
     return Mono.just(Response.of(true))
         .subscribeOn(scheduler);
