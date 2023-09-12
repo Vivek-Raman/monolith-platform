@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MonolithPlatformApplication {
+public class MonolithPlatform {
 	public static void main(String[] args) {
-		SpringApplication.run(MonolithPlatformApplication.class, args);
+		SpringApplication.run(MonolithPlatform.class, args);
 	}
 }

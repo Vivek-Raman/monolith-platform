@@ -1,12 +1,12 @@
 package dev.vivekraman.monolith.platform;
 
-import org.junit.jupiter.api.Test;
+import dev.vivekraman.monolith.platform.annotation.MonolithTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MonolithPlatformApplicationTests {
+class MonolithPlatformTests {
 
-	@Test
+	@MonolithTest
 	void contextLoads() {
 	}
 
