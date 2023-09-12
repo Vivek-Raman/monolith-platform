@@ -1,14 +1,9 @@
 package dev.vivekraman.monolith.platform.config;
 
-import lombok.AccessLevel;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 
@@ -28,7 +23,7 @@ public class SchedulerConfig {
   private Boolean allowCoreThreadTimeOut = Boolean.TRUE;
 
   @Bean
-  public Scheduler scheduler() throws Exception {
+  public Scheduler scheduler() {
     ThreadPoolExecutor threadPoolExecutor =
         new ThreadPoolExecutor(getCorePoolSize(), getMaximumPoolSize(),
             getKeepAliveTime(), getUnit(),
