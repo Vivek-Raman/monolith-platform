@@ -12,8 +12,10 @@
 	<artifactId>monolith-platform</artifactId>
 	<version>2.0-rc1</version>
 	<name>monolith-platform</name>
+	<url>https://vivekraman.dev</url>
 	<description>Imports and deploys various other projects as modules.</description>
 	<properties>
+		<github-token>${env.GITHUB_TOKEN}</github-token>
 		<java.version>17</java.version>
 		<commons-io.version>2.11.0</commons-io.version>
 		<springdoc.version>2.1.0</springdoc.version>
@@ -21,6 +23,23 @@
 		<module.template.version>1.0-rc1</module.template.version>
 		<module.external-config.version>1.0-rc1</module.external-config.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>github</id>
+			<url>https://Vivek-Raman:${github-token}@maven.pkg.github.com/Vivek-Raman/monolith-common</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>github</id>
+			<url>https://Vivek-Raman:${github-token}@maven.pkg.github.com/Vivek-Raman/backend-module-template</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<!-- START Starter Dependencies -->
