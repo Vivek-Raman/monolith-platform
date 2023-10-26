@@ -1,9 +1,10 @@
 package dev.vivekraman.monolith.platform.config;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
-import io.swagger.v3.oas.models.servers.Server;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springdoc.core.customizers.GlobalOpenApiCustomizer;
@@ -19,6 +20,7 @@ import java.util.Optional;
 
 @Slf4j
 @Configuration
+@OpenAPIDefinition(servers = @Server(url = "/", description = "Server URL"))
 public class SpringdocConfig {
   private static final String API_GROUP = "common";
   @Bean
@@ -43,8 +45,6 @@ public class SpringdocConfig {
   @Bean
   public GlobalOpenApiCustomizer globalOpenApiCustomizer() {
     return (openApi) -> {
-      openApi.addServersItem(new Server().url("/"));
-
       Info info = new Info();
       info.setTitle("Vivek Raman's Backend Monolith Platform v2");
       info.setVersion(version);
