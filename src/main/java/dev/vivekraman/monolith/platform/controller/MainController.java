@@ -29,6 +29,7 @@ public class MainController {
   private final Scheduler scheduler;
 
   @GetMapping
+  @Hidden
   public Mono<ResponseEntity<Object>> redirectToSwaggerUI(RequestEntity<?> request) {
     return Mono.just(ResponseEntity.status(HttpStatus.PERMANENT_REDIRECT)
             .location(request.getUrl().resolve("/swagger-ui.html")).build())

@@ -1,5 +1,7 @@
 package dev.vivekraman.monolith.platform.config;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import lombok.extern.slf4j.Slf4j;
@@ -11,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Slf4j
 @Configuration
+@OpenAPIDefinition(servers = {@Server(url = "/", description = "Default Server URL")})
 public class SpringdocConfig {
   private static final String API_GROUP = "common";
   @Bean
