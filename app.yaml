@@ -3,6 +3,9 @@ instance_class: F1
 includes:
   - secrets.yaml
 
+env_variables:
+  PRODUCTION: true
+
 inbound_services:
   - warmup
 automatic_scaling:

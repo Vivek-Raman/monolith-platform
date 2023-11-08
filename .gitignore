@@ -33,4 +33,7 @@ build/
 ### VS Code ###
 .vscode/
 
+### JetBrains Fleet ###
+.fleet/
+
 secrets.yaml
