@@ -1,0 +1,26 @@
+application:
+  production: ${PRODUCTION:false}
+
+server:
+  port: ${PORT:8080}
+
+springdoc:
+  api-docs:
+    groups:
+      enabled: true
+  swagger-ui:
+    enabled: true
+    try-it-out-enabled: true
+    persist-authorization: true
+  webjars:
+    prefix:
+
+spring:
+  application:
+    version: @project.version@
+  profiles:
+    active:
+      - default
+      - db
+    include: # Add all modules here, comment to disable them
+      - external-config
