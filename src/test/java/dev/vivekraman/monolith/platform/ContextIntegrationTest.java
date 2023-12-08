@@ -1,10 +1,10 @@
 package dev.vivekraman.monolith.platform;
 
-import dev.vivekraman.monolith.platform.annotation.MonolithTest;
 import dev.vivekraman.monolith.platform.base.BaseTestSuite;
+import org.junit.jupiter.api.Test;
 
 public class ContextIntegrationTest extends BaseTestSuite {
-  @MonolithTest
+  @Test
   public void contextLoads() {
   }
 }

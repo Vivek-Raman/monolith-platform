@@ -2,9 +2,9 @@
 set -e
 
 # build and deploy
-./mvnw clean install
+./mvnw clean install -DskipTests
 
-gcloud app deploy --quiet
+/usr/local/bin/gcloud app deploy --quiet
 
 #PROD_URL=https://backend.vivekraman.dev
 #
