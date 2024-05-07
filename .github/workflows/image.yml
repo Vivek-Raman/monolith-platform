@@ -21,6 +21,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.4
 
+      - name: maven-settings-action
+        uses: s4u/maven-settings-action@v3.0.0
+
       - name: Copy settings.xml
         run: cp $GITHUB_WORKSPACE/settings.xml .
 
