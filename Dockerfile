@@ -1,6 +1,6 @@
 FROM maven:3.9.6-eclipse-temurin-21-alpine as build
 
-RUN ls -al
+RUN echo $(ls)
 
 COPY settings.xml .
 COPY . /usr/src/app
