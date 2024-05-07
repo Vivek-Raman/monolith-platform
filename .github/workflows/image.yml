@@ -21,6 +21,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4.1.4
 
+      - name: Copy settings.xml
+        run: cp $GITHUB_WORKSPACE/settings.xml .
+
       - name: Log in to the Container registry
         uses: docker/login-action@v3.1.0
         with:
