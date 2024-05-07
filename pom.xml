@@ -25,7 +25,7 @@
 
 	<repositories>
 		<repository>
-			<id>github-monolith-common</id>
+			<id>github</id>
 			<url>https://maven.pkg.github.com/Vivek-Raman/artifacts</url>
 			<snapshots>
 				<enabled>true</enabled>
