@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 RUN mvn -B clean package -DskipTests -s settings.xml
 
 FROM eclipse-temurin:21-alpine
+LABEL org.opencontainers.image.description = "Vivek's personal backend server."
+
 COPY --from=build /usr/src/app/target/*.jar /usr/app/app.jar
 WORKDIR /usr/app
 EXPOSE 8080
