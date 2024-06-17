@@ -3,7 +3,7 @@ COPY . /usr/src/app
 WORKDIR /usr/src/app
 RUN mvn -B clean package -DskipTests -s settings.xml
 
-FROM eclipse-temurin:21-alpine
+FROM eclipse-temurin:21-jre-alpine
 LABEL org.opencontainers.image.description = "Vivek's personal backend server."
 
 COPY --from=build /usr/src/app/target/*.jar /usr/app/app.jar
