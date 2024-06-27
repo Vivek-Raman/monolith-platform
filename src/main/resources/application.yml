@@ -18,11 +18,12 @@ springdoc:
 spring:
   application:
     version: @project.version@
+  webflux:
+    base-path: ${BASE_URL_PATH:/}
   profiles:
     active:
       - default
       - db
     include: # Add all modules here, comment to disable them
       - external-config
-  webflux:
-    base-path: ${BASE_URL_PATH:/}
+      - item-collection-tracker
