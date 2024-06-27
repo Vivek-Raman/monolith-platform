@@ -22,7 +22,7 @@
 
 		<monolith-common.version>2.0-rc4</monolith-common.version>
 		<module.external-config.version>2.0-rc2</module.external-config.version>
-		<module.item-collection-tracker.version>1.0-rc1</module.item-collection-tracker.version>
+		<module.item-collection-tracker.version>1.0-rc2</module.item-collection-tracker.version>
 	</properties>
 
 	<repositories>
