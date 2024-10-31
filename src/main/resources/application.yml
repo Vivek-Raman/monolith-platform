@@ -27,3 +27,4 @@ spring:
     include: # Add all modules here, comment to disable them
       - external-config
       - item-collection-tracker
+      - notion-assistant
