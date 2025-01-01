@@ -23,7 +23,7 @@
 		<monolith-common.version>2.2-rc2</monolith-common.version>
 		<module.external-config.version>2.0-rc2</module.external-config.version>
 		<module.item-collection-tracker.version>1.0-rc2</module.item-collection-tracker.version>
-    <module.notion-assistant.version>1.0-rc3</module.notion-assistant.version>
+    <module.notion-assistant.version>1.0-rc4</module.notion-assistant.version>
     <module.river-crossing.version>1.0-rc1</module.river-crossing.version>
 	</properties>
 
