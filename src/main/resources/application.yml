@@ -28,4 +28,4 @@ spring:
       - external-config
       - item-collection-tracker
       - notion-assistant
-      - river-crossing
+      # - river-crossing

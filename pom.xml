@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>dev.vivekraman</groupId>
 	<artifactId>monolith-platform</artifactId>
-	<version>4.1-rc5</version>
+	<version>4.1-rc6</version>
 	<name>monolith-platform</name>
 	<url>https://vivekraman.dev</url>
 	<description>Imports and deploys various other projects as modules.</description>
@@ -137,11 +137,11 @@
 			<artifactId>notion-assistant</artifactId>
 			<version>${module.notion-assistant.version}</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>dev.vivekraman</groupId>
 			<artifactId>river-crossing</artifactId>
 			<version>${module.river-crossing.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<!-- END Modules -->
 	</dependencies>
