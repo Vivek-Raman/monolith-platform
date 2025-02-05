@@ -29,3 +29,4 @@ spring:
       # - item-collection-tracker # TODO: re-import or remove
       - notion-assistant
       # - river-crossing
+      - finance-manager
