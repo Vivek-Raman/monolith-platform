@@ -26,6 +26,6 @@ spring:
       - db
     include: # Add all modules here, comment to disable them
       - external-config
-      - item-collection-tracker
+      # - item-collection-tracker # TODO: re-import or remove
       - notion-assistant
       # - river-crossing
