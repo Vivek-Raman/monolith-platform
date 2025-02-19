@@ -59,34 +59,4 @@ public class SpringdocConfig {
       openApi.setInfo(info);
     };
   }
-
-  @Bean
-  public OperationCustomizer operationCustomizer() {
-    return ((operation, handlerMethod) -> {
-      StringBuilder finalPath = new StringBuilder();
-      String baseUrl = "https://monolith-platform-v1.ue.r.appspot.com";
-      finalPath.append(baseUrl);
-
-      RequestMapping controllerConfig = handlerMethod.getBeanType().getAnnotation(RequestMapping.class);
-      RequestMapping requestConfig = handlerMethod.getMethodAnnotation(RequestMapping.class);
-
-      finalPath.append(extractPath(controllerConfig));
-      finalPath.append(extractPath(requestConfig));
-
-      operation.addExtension("x-google-backend",
-          Collections.singletonMap("address", finalPath.toString()));
-      return operation;
-    });
-  }
-
-  private String extractPath(RequestMapping requestMapping) {
-    return Optional.ofNullable(requestMapping)
-        .map(request -> {
-          if (request.path().length > 0) return request.path();
-          else return request.value();
-        })
-        .filter(paths -> paths.length > 0)
-        .map(paths -> paths[0])
-        .orElse(StringUtils.EMPTY);
-  }
 }
