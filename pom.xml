@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>dev.vivekraman</groupId>
 	<artifactId>monolith-platform</artifactId>
-	<version>4.3-rc7</version>
+	<version>4.3-rc8</version>
 	<name>monolith-platform</name>
 	<url>https://vivekraman.dev</url>
 	<description>Imports and deploys various other projects as modules.</description>
