@@ -5,17 +5,11 @@ import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springdoc.core.customizers.GlobalOpenApiCustomizer;
-import org.springdoc.core.customizers.OperationCustomizer;
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.Collections;
-import java.util.Optional;
 
 @Slf4j
 @Configuration
