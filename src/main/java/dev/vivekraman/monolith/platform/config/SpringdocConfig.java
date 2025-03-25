@@ -46,7 +46,7 @@ public class SpringdocConfig {
 
       Contact contact = new Contact();
       contact.setName("Vivek Raman");
-      contact.setEmail("vr.ac4bf@live.com");
+      contact.setEmail("vivek-raman@outlook.com");
       contact.setUrl("https://vivekraman.dev");
       info.setContact(contact);
 
