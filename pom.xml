@@ -16,7 +16,7 @@
 	<description>Imports and deploys various other projects as modules.</description>
 	<properties>
 		<java.version>21</java.version>
-		<commons-io.version>2.11.0</commons-io.version>
+		<commons-io.version>2.19.0</commons-io.version>
 		<springdoc.version>2.1.0</springdoc.version>
 		<spring-cloud-gcp.version>5.4.1</spring-cloud-gcp.version>
 
